@@ -10,6 +10,7 @@ def main():
     pygame.init()
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
     clock = pygame.time.Clock()
+    score = 0
 
     updatable = pygame.sprite.Group()
     drawable = pygame.sprite.Group()
@@ -42,7 +43,7 @@ def main():
             for shot in shots:
                 if asteroid.collides_with(shot):
                     asteroid.kill()
-                    shot.kill()
+                    asteroid.split()
                     break
 
         screen.fill("black")

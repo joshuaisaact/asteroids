@@ -4,7 +4,7 @@
 
 A simple Asteroids clone built with Pygame.
 
-Shoot asteroids, avoid collisions, and rack up points as they split into smaller pieces.
+Shoot asteroids, avoid collisions, and beat your high score.
 
 **Installation:**
 
